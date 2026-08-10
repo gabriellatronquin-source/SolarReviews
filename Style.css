@@ -1,6 +1,6 @@
   
       
-        .search-container {
+       .search-container {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -97,28 +97,4 @@ img {
     left: 45px;
 }
 
-/* Organização de 2 imagens por linha */
-.galeria-produtos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 20px;
-    width: 100%;
-    max-width: 800px;
-}
-
-/* Quadradinhos dos produtos */
-.card-produto {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    background-color: #fff;
-}
-
-/* BORDA AMARELA NAS IMAGENS DOS PRODUTOS */
-.card-produto img {
-    width: 100%;
-    height: auto;
-    border
-    }
+/* Organização de 2 imagens por linha

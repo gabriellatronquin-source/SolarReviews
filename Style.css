@@ -96,3 +96,29 @@
     top: 20px;
     left: 45px;
 }
+
+/* Organização de 2 imagens por linha */
+.galeria-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Quadradinhos dos produtos */
+.card-produto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card-produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 0 0 10px 0;
+}

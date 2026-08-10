@@ -122,21 +122,24 @@
     border-radius: 6px;
     margin: 0 0 10px 0;
 }
-/* --- CABEÇALHO DO TOPO --- */
+/* --- CABEÇALHO CENTRALIZADO E MAIOR --- */
 .cabecalho-principal {
     display: flex;
     align-items: center;
-    padding: 15px 30px;
+    justify-content: center; /* Centraliza todo o conteúdo no meio da tela */
+    padding: 25px 30px;      /* Aumenta o espaço superior e inferior */
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     position: relative;
+    width: 100%;
 }
 
 .btn-voltar {
-    font-size: 24px;
+    font-size: 28px;
     text-decoration: none;
     color: #0d1b2a;
-    margin-right: 20px;
+    position: absolute;      /* Deixa a seta fixa na esquerda sem atrapalhar a centralização */
+    left: 30px;
     font-weight: bold;
 }
 
@@ -144,49 +147,55 @@
 .logo-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;   /* Alinha o subtítulo com a logo */
 }
 
 .logo-titulo {
     font-family: 'Showcard Gothic', 'Arial Black', sans-serif;
-    font-size: 32px;
+    font-size: 42px;         /* Aumentou o tamanho da fonte */
     letter-spacing: 1px;
     line-height: 1;
+    display: flex;
+    align-items: center;
 }
 
 .marca-solar {
-    color: #f4b400; /* Amarelo */
+    color: #f4b400;          /* Amarelo */
 }
 
 .marca-reviews {
-    color: #0b1d3a; /* Azul bem escuro quase preto */
+    color: #0b1d3a;          /* Azul bem escuro quase preto */
 }
 
+/* RAIO MAIOR E EM AZUL ESCURO */
 .icone-raio {
-    color: #0b1d3a; /* Azul bem escuro */
-    font-size: 28px;
-    margin-left: 5px;
+    color: #0b1d3a;          /* Mesmo tom de azul bem escuro */
+    font-size: 38px;         /* Aumentou o tamanho do raio */
+    margin-left: 8px;
+    display: inline-block;
 }
 
 .subtitulo-logo {
-    font-size: 11px;
+    font-size: 13px;         /* Subtítulo um pouco maior */
     color: #555555;
-    margin-top: 4px;
+    margin-top: 5px;
     margin-bottom: 0;
     font-family: sans-serif;
 }
 
-/* LINHA AMARELA DIVISORA */
+/* LINHA DIVISORA (PRETA E VERTICAL) */
 .linha-divisora {
     width: 3px;
-    height: 45px;
-    background-color: #f4b400;
-    margin: 0 25px;
+    height: 60px;            /* Altura maior para acompanhar a logo maior */
+    background-color: #000000; /* Preta */
+    margin: 0 35px;          /* Espaço nas laterais */
+    display: block;
 }
 
 /* LADO DIREITO: TÍTULO DA PÁGINA */
 .titulo-pagina h2 {
-    color: #0b1d3a; /* Azul bem escuro quase preto */
-    font-size: 26px;
+    color: #0b1d3a;          /* Azul bem escuro quase preto */
+    font-size: 32px;         /* Título maior */
     margin: 0;
     font-weight: bold;
     font-family: sans-serif;

@@ -128,16 +128,16 @@ img {
     border-radius: 6px;
     box-sizing: border-box;
 }
-/* COR ESCURA PADRÃO: #0b1b3d (Azul bem escuro, quase preto) */
+/* COR ESCURA PADRÃO PARA TUDO: #0b1b3d (Azul bem escuro, quase preto) */
 
-/* Contêiner principal do cabeçalho */
+/* Contêiner principal do cabeçalho (Aumentado) */
 .header-principal {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 40px; /* Aumentado o espaço entre as partes */
   width: 100%;
-  padding: 20px 0;
+  padding: 35px 0; /* Cabeçalho mais alto */
   margin: 0 auto;
 }
 
@@ -145,21 +145,22 @@ img {
 .header-lado-esquerdo {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o subtítulo em relação ao título */
+  align-items: center;
   text-align: center;
 }
 
 .titulo-com-icone {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .titulo-solar {
-  font-size: 32px;
-  font-weight: bold;
+  font-family: 'Showcard Gothic', 'Impact', sans-serif; /* Fonte Showcard Gothic */
+  font-size: 44px; /* Aumentado */
   margin: 0;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .cor-solar {
@@ -170,25 +171,27 @@ img {
   color: #0b1b3d; /* Azul bem escuro */
 }
 
-/* Ícone do Raio */
+/* Ícone do Raio (Aumentado) */
 .icone-raio {
-  width: 28px;
-  height: 28px;
-  fill: #0b1b3d; /* Mesma cor do REVIS */
+  width: 38px;
+  height: 38px;
+  fill: #0b1b3d; /* Azul bem escuro */
 }
 
-/* Subtítulo centralizado logo abaixo do título */
+/* Subtítulo centralizado em azul bem escuro */
 .subtitulo {
-  margin: 5px 0 0 0;
-  font-size: 14px;
-  color: #555;
+  margin: 6px 0 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0b1b3d; /* Agora na mesma cor azul bem escuro */
 }
 
-/* --- LINHA DIVISÓRIA ENTRE AS DUAS PARTES --- */
+/* --- LINHA DIVISÓRIA (Agora em Azul Bem Escuro) --- */
 .divisoria-vertical {
-  width: 2px;
-  height: 50px;
-  background-color: #000000; /* Linha preta */
+  width: 3px;
+  height: 65px; /* Altura maior para acompanhar a fonte */
+  background-color: #0b1b3d; /* Azul bem escuro */
+  border-radius: 2px;
 }
 
 /* --- LADO DIREITO --- */
@@ -198,7 +201,7 @@ img {
 }
 
 .texto-epis {
-  font-size: 22px;
+  font-size: 28px; /* Aumentado */
   font-weight: bold;
-  color: #0b1b3d; /* Mesma cor do REVIS e do Raio */
+  color: #0b1b3d; /* Azul bem escuro */
 }

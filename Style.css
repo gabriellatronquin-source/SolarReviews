@@ -77,3 +77,22 @@
                  border-radius: 10px;
              }
         
+             .btn-voltar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #f4b400;  /* Amarelo/Laranja do site */
+    color: #ffffff;             /* Cor branca */
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 32px;            /* Tamanho do V deitado */
+    font-weight: 600;           /* Traço um pouco mais fino */
+    line-height: 0;             /* Zera a linha para centralizar perfeitamente no meio */
+    padding-bottom: 2px;        /* Ajuste fino de elevação */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}

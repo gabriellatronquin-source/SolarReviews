@@ -257,26 +257,29 @@ header h1, header p {
 }
 
 /* ==========================================
-   ESTILO EXCLUSIVO DA PÁGINA INICIAL (INDEX)
+   CABEÇALHO DA PÁGINA INICIAL (INDEX)
    ========================================== */
 
-/* Centraliza o cabeçalho no topo da página */
+/* Cabeçalho centralizado no topo */
 .header-index {
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Garante que o bloco do título e do subtítulo fiquem alinhados entre si */
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
-/* Título bem grande, usando Showcard Gothic e ocupando a largura do topo */
+/* Título Showcard Gothic */
 .titulo-index {
     font-family: 'Showcard Gothic', 'Impact', sans-serif;
-    font-size: 6vw; /* Faz o título crescer proporcionalmente à tela */
+    font-size: 6vw;
     margin: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Espaço entre as palavras e o raiozinho */
+    gap: 15px;
     text-transform: uppercase;
 }
 
@@ -290,19 +293,21 @@ header h1, header p {
     color: #0b1b3d;
 }
 
-/* Raiozinho na mesma cor azul escuro do Reviews */
+/* Raiozinho em Azul escuro */
 .icone-raio-index {
     color: #0b1b3d;
     font-size: 0.9em;
 }
 
-/* Subtítulo centralizado, maior e mais chamativo */
+/* Subtítulo perfeitamente centralizado em relação ao TÍTULO */
 .subtitulo-index {
     margin-top: 15px;
-    font-size: 24px; /* Aumentado de 18px para 24px */
-    color: #0b1b3d; /* Mantém o azul escuro padrão */
-    font-weight: 700; /* Deixa o texto mais encorpado */
-    letter-spacing: 0.5px; /* Da um leve espaçamento entre as letras */
+    font-size: 24px;
+    color: #0b1b3d;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: fit-content; /* Força o subtítulo a ter a largura exata do bloco acima */
 }
 
 /* ==========================================

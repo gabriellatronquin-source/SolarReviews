@@ -303,3 +303,42 @@ header h1, header p {
     color: #0b1b3d;
     font-weight: 600;
 }
+
+/* ==========================================
+   SOBRE NÓS E IMAGEM LADO A LADO (INDEX)
+   ========================================== */
+
+/* Transforma a seção em um contêiner lado a lado e ajusta o fundo */
+.secao-sobre {
+    background-color: transparent; /* Remove a caixa branca de fundo */
+    display: flex;
+    align-items: center; /* Alinha o texto e a imagem verticalmente no centro */
+    justify-content: space-between;
+    gap: 30px; /* Espaço entre o texto e a imagem */
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px 0;
+}
+
+/* Lado Esquerdo: Ajustes do texto */
+.conteudo-sobre {
+    flex: 1;
+    text-align: left; /* Deixa o texto alinhado à esquerda para um visual mais limpo */
+}
+
+.conteudo-sobre h2 {
+    color: #0b1b3d; /* Mesmo azul escuro para manter o padrão */
+    margin-bottom: 15px;
+}
+
+/* Lado Direito: Ajustes da imagem */
+.imagem-sobre {
+    flex: 1;
+}
+
+.imagem-sobre img {
+    width: 100%;
+    height: auto;
+    margin: 0; /* Remove margens extras que podiam gerar espaços brancos */
+    border-radius: 10px;
+}

@@ -305,40 +305,61 @@ header h1, header p {
 }
 
 /* ==========================================
-   SOBRE NÓS E IMAGEM LADO A LADO (INDEX)
+   SOBRE NÓS E IMAGEM (ALINHAMENTO TIPO ARTIGO)
    ========================================== */
 
-/* Transforma a seção em um contêiner lado a lado e ajusta o fundo */
+/* Seção principal: centralizada na página e sem fundo branco */
 .secao-sobre {
-    background-color: transparent; /* Remove a caixa branca de fundo */
+    background-color: transparent; /* Remove o fundo branco */
     display: flex;
-    align-items: center; /* Alinha o texto e a imagem verticalmente no centro */
+    align-items: center; /* Centraliza o texto verticalmente com a imagem */
     justify-content: space-between;
-    gap: 30px; /* Espaço entre o texto e a imagem */
-    width: 80%;
-    max-width: 1000px;
-    padding: 20px 0;
+    gap: 40px; /* Espaço seguro entre o texto e a imagem */
+    width: 90%;
+    max-width: 1100px; /* Aumenta a largura total para dar respiro */
+    margin: 30px auto; /* Afasta o bloco das bordas e centraliza */
+    padding: 10px;
 }
 
-/* Lado Esquerdo: Ajustes do texto */
+/* Lado Esquerdo: Ajustes e tamanho do texto */
 .conteudo-sobre {
-    flex: 1;
-    text-align: left; /* Deixa o texto alinhado à esquerda para um visual mais limpo */
+    flex: 1; /* Ocupa exatamente a metade do espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Garante alinhamento central */
+    padding: 0 10px; /* Evita que o texto encoste na borda esquerda */
 }
 
+/* Título "Sobre nós" maior */
 .conteudo-sobre h2 {
-    color: #0b1b3d; /* Mesmo azul escuro para manter o padrão */
-    margin-bottom: 15px;
+    color: #0b1b3d;
+    font-size: 32px; /* Aumentado para ter mais destaque */
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-/* Lado Direito: Ajustes da imagem */
+/* Parágrafo com letra maior e estilo artigo */
+.conteudo-sobre p {
+    color: #333333;
+    font-size: 20px; /* Letra maior para igualar visualmente a altura da imagem */
+    line-height: 1.6; /* Espaçamento entre linhas para leitura agradável */
+    text-align: justify; /* Alinha o texto perfeitamente dos dois lados (estilo jornal/artigo) */
+    margin: 0;
+}
+
+/* Lado Direito: Ajustes da Imagem */
 .imagem-sobre {
-    flex: 1;
+    flex: 1; /* Ocupa exatamente a outra metade do espaço */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem-sobre img {
     width: 100%;
+    max-width: 500px; /* Mantém a imagem num tamanho elegante */
     height: auto;
-    margin: 0; /* Remove margens extras que podiam gerar espaços brancos */
-    border-radius: 10px;
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra suave para destacar no fundo cinza */
 }

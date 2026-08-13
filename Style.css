@@ -255,3 +255,51 @@ header h1, header p {
   background-color: #d99b00;
   transform: scale(1.08);
 }
+
+/* ==========================================
+   ESTILO EXCLUSIVO DA PÁGINA INICIAL (INDEX)
+   ========================================== */
+
+/* Centraliza o cabeçalho no topo da página */
+.header-index {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Título bem grande, usando Showcard Gothic e ocupando a largura do topo */
+.titulo-index {
+    font-family: 'Showcard Gothic', 'Impact', sans-serif;
+    font-size: 6vw; /* Faz o título crescer proporcionalmente à tela */
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espaço entre as palavras e o raiozinho */
+    text-transform: uppercase;
+}
+
+/* Palavra "Solar" em Amarelo */
+.header-index .cor-solar {
+    color: #F4B400;
+}
+
+/* Palavra "Reviews" em Azul bem escuro */
+.header-index .cor-reviews {
+    color: #0b1b3d;
+}
+
+/* Raiozinho na mesma cor azul escuro do Reviews */
+.icone-raio-index {
+    color: #0b1b3d;
+    font-size: 0.9em;
+}
+
+/* Subtítulo centralizado */
+.subtitulo-index {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #0b1b3d;
+    font-weight: 600;
+}

@@ -296,12 +296,13 @@ header h1, header p {
     font-size: 0.9em;
 }
 
-/* Subtítulo centralizado */
+/* Subtítulo centralizado, maior e mais chamativo */
 .subtitulo-index {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #0b1b3d;
-    font-weight: 600;
+    margin-top: 15px;
+    font-size: 24px; /* Aumentado de 18px para 24px */
+    color: #0b1b3d; /* Mantém o azul escuro padrão */
+    font-weight: 700; /* Deixa o texto mais encorpado */
+    letter-spacing: 0.5px; /* Da um leve espaçamento entre as letras */
 }
 
 /* ==========================================

@@ -257,6 +257,37 @@ header h1, header p {
   transform: scale(1.08);
 }
 
+/* BOTÃO VOLTAR REDONDO (VOLTA A APARECER NAS PÁGINAS SECUNDÁRIAS) */
+.btn-voltar-redondo {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #F4B400; /* Amarelo */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    z-index: 9999;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Seta/flecha branca dentro do botão */
+.btn-voltar-redondo svg {
+    width: 28px;
+    height: 28px;
+    fill: #FFFFFF; /* Cor da seta em branco */
+}
+
+/* Efeito ao passar o mouse */
+.btn-voltar-redondo:hover {
+    background-color: #d99b00;
+    transform: scale(1.08);
+}
+
 /* ==========================================
    CABEÇALHO DA PÁGINA INICIAL (INDEX)
    ========================================== */

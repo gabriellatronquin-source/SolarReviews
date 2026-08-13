@@ -11,20 +11,23 @@
 }
 
 .search-btn {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border: none;
     border-radius: 50%;
     background: #f4b400;
     color: white;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background 0.3s ease;
 }
 
+.search-btn:hover {
+    background: #d99b00;
+}
 .search-btn:hover {
     background: #d99b00;
 }

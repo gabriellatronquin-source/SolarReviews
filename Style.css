@@ -305,61 +305,62 @@ header h1, header p {
 }
 
 /* ==========================================
-   SOBRE NÓS E IMAGEM (ALINHAMENTO TIPO ARTIGO)
+   SOBRE NÓS E IMAGEM (MESMA ALTURA E CENTRALIZADO)
    ========================================== */
 
-/* Seção principal: centralizada na página e sem fundo branco */
+/* Seção principal: centralizada na página com margem segura das bordas */
 .secao-sobre {
-    background-color: transparent; /* Remove o fundo branco */
+    background-color: transparent; /* Mantém sem fundo branco */
     display: flex;
-    align-items: center; /* Centraliza o texto verticalmente com a imagem */
-    justify-content: space-between;
-    gap: 40px; /* Espaço seguro entre o texto e a imagem */
-    width: 90%;
-    max-width: 1100px; /* Aumenta a largura total para dar respiro */
-    margin: 30px auto; /* Afasta o bloco das bordas e centraliza */
-    padding: 10px;
+    align-items: stretch; /* Força ambos os lados (texto e imagem) a terem exatamente a mesma altura */
+    justify-content: center;
+    gap: 50px; /* Espaço entre o texto e a imagem */
+    width: 80%;
+    max-width: 900px; /* Limita a largura para garantir que o texto não cole nas bordas da tela */
+    margin: 40px auto; /* O "auto" centraliza todo o bloco na página */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Lado Esquerdo: Ajustes e tamanho do texto */
+/* Lado Esquerdo: Bloco de texto ajustado para corresponder à imagem */
 .conteudo-sobre {
-    flex: 1; /* Ocupa exatamente a metade do espaço */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Garante alinhamento central */
-    padding: 0 10px; /* Evita que o texto encoste na borda esquerda */
+    justify-content: space-between; /* Espalha título e parágrafo de topo a fim da altura */
+    padding: 10px 20px; /* Adiciona respiro interno para afastar das bordas */
 }
 
-/* Título "Sobre nós" maior */
+/* Título "Sobre nós" */
 .conteudo-sobre h2 {
     color: #0b1b3d;
-    font-size: 32px; /* Aumentado para ter mais destaque */
-    margin-bottom: 20px;
+    font-size: 34px;
+    margin: 0 0 15px 0;
     text-align: left;
 }
 
-/* Parágrafo com letra maior e estilo artigo */
+/* Parágrafo ajustado para preencher a altura da imagem */
 .conteudo-sobre p {
     color: #333333;
-    font-size: 20px; /* Letra maior para igualar visualmente a altura da imagem */
-    line-height: 1.6; /* Espaçamento entre linhas para leitura agradável */
-    text-align: justify; /* Alinha o texto perfeitamente dos dois lados (estilo jornal/artigo) */
+    font-size: 22px; /* Tamanho de letra maior */
+    line-height: 1.7; /* Linhas mais espaçadas verticalmente para ocupar o mesmo espaço da imagem */
+    text-align: justify; /* Alinhamento retinho nas laterais estilo artigo */
     margin: 0;
 }
 
-/* Lado Direito: Ajustes da Imagem */
+/* Lado Direito: Imagem com tamanho controlado */
 .imagem-sobre {
-    flex: 1; /* Ocupa exatamente a outra metade do espaço */
+    flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .imagem-sobre img {
     width: 100%;
-    max-width: 500px; /* Mantém a imagem num tamanho elegante */
-    height: auto;
+    height: 100%;
+    max-height: 350px; /* Define a altura limite da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
     margin: 0;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra suave para destacar no fundo cinza */
 }

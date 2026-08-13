@@ -314,18 +314,21 @@ header h1, header p {
    SOBRE NÓS E IMAGEM (MESMA ALTURA E CENTRALIZADO)
    ========================================== */
 
-/* Seção principal: centralizada na página com margem segura das bordas */
+/* Seção principal: transformada em um QUADRO COM MOLDURA */
 .secao-sobre {
-    background-color: transparent;
+    background-color: white; /* Um fundo branco bem suave dentro da moldura destaca do cinza */
+    border: 2px solid #0b1b3d; /* Moldura fina na cor Azul Escuro */
+    border-radius: 12px; /* Cantos levemente arredondados para um visual moderno */
     display: flex;
     align-items: stretch;
     justify-content: center;
-    gap: 50px;
-    width: 80%;
-    max-width: 900px;
+    gap: 40px;
+    width: 85%;
+    max-width: 1000px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 35px; /* Espaço interno para o conteúdo não colar na moldura */
     box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra bem leve para dar profundidade na parede */
 }
 
 /* Lado Esquerdo: Bloco de texto */

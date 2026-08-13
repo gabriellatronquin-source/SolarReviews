@@ -1,27 +1,136 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
     <head> 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="Style.css">
-        <title>Disjuntores e Fusíveis - SolarReviews</title> 
+        <title>SolarReviews - Placas Solares</title> 
     </head>
-    
+
     <body>
-        <header>
-            <h1>Disjuntores e Fusíveis</h1>
-            <p>Avaliações e informações sobre disjuntores e fusíveis solares.</p>
-        </header>
+        <a href="javascript:history.back()" class="btn-voltar-redondo" title="Voltar">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+  </svg>
+</a>
+        <header class="header-principal">
+  <div class="header-lado-esquerdo">
+    <div class="titulo-com-icone">
+      <h1 class="titulo-solar">
+        <span class="cor-solar">SOLAR</span>
+        <span class="cor-revis">REVIEWS</span>
+      </h1>
+      <svg class="icone-raio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13 2L3 14h7v8l10-12h-7z"/>
+      </svg>
+    </div>
+    <p class="subtitulo">Todas as avaliações que você procura, em um único lugar!!</p>
+  </div>
 
-        <main>
-            <section>
-                <h2>Em Breve!</h2>
-                <p>O conteúdo desta página está a ser preparado.</p>
-            </section>
+  <div class="divisoria-vertical"></div>
 
-            <section>
-                <a href="index.html">← Voltar para a Página Inicial</a>
-            </section>
+  <div class="header-lado-direito">
+    <span class="texto-epis">Placas Solares</span>
+  </div>
+</header>
+
+        <main class="galeria-produtos">
+
+            <div class="card-produto">
+                <img src="imagens/" alt="Luva Isolante Classe 0">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas Astronergy</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="imagens/Placas JA Solar.jpg" alt="Luva de Raspa">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas JA Solar</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="imagens/Placas Jinko Solar.jpg" alt="Óculos de Segurança Escuro">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas Jinko Solar</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="imagens/Placas LONGi Solar.webp" alt="Protetor Solar">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas LONGi Solar</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="imagens/Placas Phono Solar.jpg" alt="Calçado de Segurança">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas Phono Solar</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="imagens/Placas Risen Energy.png" alt="Capacete">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas Risen Energy</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="imagens/Placas SunPower  Maxeon.jpg" alt="Cinto de Segurança">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas SunPower  Maxeon</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="imagens/Placas Trina Solar.webp" alt="Linha de Vida">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas Trina Solar</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="imagens/Placas Aiko Solar.avif" alt="Linha de Vida">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas Aiko Solar</h3>
+            </div>
+
+             <div class="card-produto">
+                <img src="imagens/Placas DMEGC Solar.avif" alt="Linha de Vida">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas DMEGC Solar</h3>
+            </div>
+
+             <div class="card-produto">
+                <img src="imagens/Placas Huasun Energy.avif" alt="Linha de Vida">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas Huasun Energy</h3>
+            </div>
+
+             <div class="card-produto">
+                <img src="imagens/Placas Talesun Solar.webp" alt="Linha de Vida">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas Talesun Solar</h3>
+            </div>
+
+             <div class="card-produto">
+                <img src="imagens/Placas DAH Solar.webp" alt="Linha de Vida">
+                <button class="btn-like" onclick="curtir(this)">❤️ <span class="count">0</span></button>
+                <button class="btn-like" onclick="curtir(this)">👎 <span class="count">0</span></button>
+                <h3>Placas DAH Solar</h3>
+            </div>
+
         </main>
+
+        <script src="Script.js"></script>
+    </body>
+</html>
 
         <footer></footer>
     </body>

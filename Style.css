@@ -413,44 +413,44 @@ header h1, header p {
 }
 
 /* ==========================================
-   SEÇÃO: POR QUE AVALIAR PRODUTOS SOLARES (AMPLIADA)
+   SEÇÃO: POR QUE AVALIAR PRODUTOS SOLARES
    ========================================== */
 
 .secao-diferenciais {
     width: 90%;
-    max-width: 1100px; /* Aumenta a área total da seção na tela */
-    margin: 70px auto;  /* Mais espaçamento superior e inferior */
+    max-width: 1100px;
+    margin: 70px auto;
     background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, sans-serif; /* Fonte Arial aplicada */
-}
-
-/* Título principal bem maior e chamativo */
-.titulo-diferenciais {
-    color: #0b1b3d;
-    font-size: 42px; /* Aumentado de 32px para 42px */
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 60px;
     font-family: Arial, sans-serif;
 }
 
-/* Espaçamento generoso entre tópicos */
+/* Título principal: Negrito bem marcante */
+.titulo-diferenciais {
+    color: #0b1b3d;
+    font-size: 42px;
+    font-weight: 900; /* Negrito ultra pesado */
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Lista e alinhamento dos tópicos */
 .lista-topicos {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 65px; /* Aumenta a distância vertical entre cada tópico */
+    gap: 65px;
 }
 
-/* Cada tópico ocupa mais espaço na página */
 .topico-item {
     display: flex;
     align-items: center;
-    gap: 30px; /* Mais espaço entre o ícone e o texto */
-    width: 75%; /* Aumentado de 60% para 75% para preencher a largura da tela */
+    gap: 30px;
+    width: 80%; /* Aumentado para ocupar mais espaço na página */
 }
 
 .topico-esquerda {
@@ -464,11 +464,13 @@ header h1, header p {
     text-align: right;
 }
 
-/* ÍCONES 40% MAIORES */
+/* ÍCONES GRANDES E ENCORPADOS */
 .icone-topico svg {
-    width: 63px;  /* Aumentado de 45px para 63px (+40%) */
-    height: 63px; /* Aumentado de 45px para 63px (+40%) */
+    width: 75px;  /* Aumentado de 63px para 75px */
+    height: 75px;
     flex-shrink: 0;
+    /* Adiciona uma leve sombra para dar mais presença ao ícone */
+    filter: drop-shadow(0px 3px 5px rgba(0,0,0,0.15));
 }
 
 .icone-sol svg {
@@ -483,21 +485,22 @@ header h1, header p {
     fill: #0b1b3d;
 }
 
-/* TÍTULOS DOS TÓPICOS (QUALIDADE, EFICIÊNCIA, INFORMAÇÃO) 40% MAIORES */
+/* TÍTULOS DOS TÓPICOS EM NEGRITO FORTE */
 .texto-topico h3 {
     color: #0b1b3d;
-    font-size: 31px; /* Aumentado de 22px para 31px (+40%) */
-    font-weight: bold;
-    margin: 0 0 10px 0;
+    font-size: 32px;
+    font-weight: 900; /* Negrito pesado */
+    margin: 0 0 8px 0;
     letter-spacing: 1px;
     font-family: Arial, sans-serif;
 }
 
-/* DESCRIÇÃO DOS TÓPICOS MAIORES */
+/* DESCRIÇÃO DOS TÓPICOS EM NEGRITO */
 .texto-topico p {
-    color: #333333;
-    font-size: 24px; /* Aumentado de 18px para 24px (+33%) */
-    line-height: 1.5;
+    color: #111111; /* Cor mais escura para dar mais destaque */
+    font-size: 24px;
+    font-weight: 700; /* Texto do parágrafo totalmente em NEGRITO */
+    line-height: 1.4;
     margin: 0;
     font-family: Arial, sans-serif;
 }

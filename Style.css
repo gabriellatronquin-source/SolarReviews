@@ -446,38 +446,45 @@ header h1, header p {
     gap: 65px;
 }
 
-./* ==========================================
-   MOLDURA EM VOLTA DE CADA TÓPICO
+/* ==========================================
+   MOLDURA E ALINHAMENTO DOS TÓPICOS
    ========================================== */
 
-/* Cada tópico com uma moldura (linha fina) amarela/laranja */
+/* Caixa do tópico com a moldura amarela */
 .topico-item {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    flex-direction: row; /* Força o ícone e o texto a ficarem LADO A LADO */
+    align-items: center; /* Centraliza o ícone verticalmente junto ao texto */
+    gap: 25px; /* Espaço entre o ícone e a caixa de texto */
     width: 80%;
     
-    /* Moldura em volta do tópico */
-    border: 2px solid #F4B400; /* Linha fina na cor #F4B400 */
-    border-radius: 12px;       /* Cantos arredondados elegantes */
-    padding: 25px 30px;        /* Espaço interno para o texto/ícone não colarem na borda */
-    background: transparent;   /* Mantém o fundo cinza original da página */
+    /* Moldura em volta de todo o tópico */
+    border: 2px solid #F4B400; /* Linha fina na cor amarela/laranja */
+    border-radius: 12px;
+    padding: 25px 30px;
+    background: transparent; /* Mantém o fundo padrão do site */
     box-sizing: border-box;
 }
 
-/* Alinhamento no lado esquerdo */
+/* Tópico da Esquerda: Ícone ANTES do texto */
 .topico-esquerda {
     align-self: flex-start;
+    flex-direction: row; /* Ícone na esquerda, texto na direita */
     text-align: left;
 }
 
-/* Alinhamento no lado direito */
+/* Tópico da Direita: Texto ANTES do ícone (ou do lado direito) */
 .topico-direita {
     align-self: flex-end;
-    flex-direction: row-reverse; /* Ícone no canto direito do quadro */
+    flex-direction: row-reverse; /* Texto na esquerda, ícone na direita */
     text-align: right;
 }
 
+/* Garante que o texto fique organizado em bloco interno */
+.texto-topico {
+    display: flex;
+    flex-direction: column; /* Título em cima, frase explicativa embaixo */
+}
 /* ÍCONES GRANDES E ENCORPADOS */
 .icone-topico svg {
     width: 75px;  /* Aumentado de 63px para 75px */

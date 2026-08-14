@@ -413,89 +413,91 @@ header h1, header p {
 }
 
 /* ==========================================
-   SEÇÃO: POR QUE AVALIAR PRODUTOS SOLARES
+   SEÇÃO: POR QUE AVALIAR PRODUTOS SOLARES (AMPLIADA)
    ========================================== */
 
 .secao-diferenciais {
-    width: 85%;
-    max-width: 1000px;
-    margin: 50px auto;
+    width: 90%;
+    max-width: 1100px; /* Aumenta a área total da seção na tela */
+    margin: 70px auto;  /* Mais espaçamento superior e inferior */
     background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Arial, sans-serif; /* Fonte Arial aplicada */
 }
 
-/* Título da seção centralizado */
+/* Título principal bem maior e chamativo */
 .titulo-diferenciais {
-    color: #0b1b3d; /* Azul Escuro */
-    font-size: 32px;
+    color: #0b1b3d;
+    font-size: 42px; /* Aumentado de 32px para 42px */
     font-weight: bold;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    font-family: Arial, sans-serif;
 }
 
-/* Container da lista dos tópicos */
+/* Espaçamento generoso entre tópicos */
 .lista-topicos {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 45px; /* Espaço equivalente a ~2 parágrafos de distância entre tópicos */
+    gap: 65px; /* Aumenta a distância vertical entre cada tópico */
 }
 
-/* Estrutura base de cada tópico */
+/* Cada tópico ocupa mais espaço na página */
 .topico-item {
     display: flex;
     align-items: center;
-    gap: 20px;
-    width: 60%; /* Define a largura máxima do bloco do tópico */
+    gap: 30px; /* Mais espaço entre o ícone e o texto */
+    width: 75%; /* Aumentado de 60% para 75% para preencher a largura da tela */
 }
 
-/* Alinhamento no lado esquerdo */
 .topico-esquerda {
     align-self: flex-start;
     text-align: left;
 }
 
-/* Alinhamento no lado direito */
 .topico-direita {
     align-self: flex-end;
-    flex-direction: row-reverse; /* Inverte para o ícone continuar ao lado do texto */
+    flex-direction: row-reverse;
     text-align: right;
 }
 
-/* Ícones */
+/* ÍCONES 40% MAIORES */
 .icone-topico svg {
-    width: 45px;
-    height: 45px;
+    width: 63px;  /* Aumentado de 45px para 63px (+40%) */
+    height: 63px; /* Aumentado de 45px para 63px (+40%) */
     flex-shrink: 0;
 }
 
 .icone-sol svg {
-    fill: #F4B400; /* Sol Amarelo */
+    fill: #F4B400;
 }
 
 .icone-raio-laranja svg {
-    fill: #FF6B00; /* Raio Laranja */
+    fill: #FF6B00;
 }
 
 .icone-lupa-azul svg {
-    fill: #0b1b3d; /* Lupa Azul Escuro */
+    fill: #0b1b3d;
 }
 
-/* Título do Tópico (QUALIDADE, EFICIÊNCIA, INFORMAÇÃO) */
+/* TÍTULOS DOS TÓPICOS (QUALIDADE, EFICIÊNCIA, INFORMAÇÃO) 40% MAIORES */
 .texto-topico h3 {
     color: #0b1b3d;
-    font-size: 22px;
+    font-size: 31px; /* Aumentado de 22px para 31px (+40%) */
     font-weight: bold;
-    margin: 0 0 6px 0;
+    margin: 0 0 10px 0;
     letter-spacing: 1px;
+    font-family: Arial, sans-serif;
 }
 
-/* Descrição do Tópico */
+/* DESCRIÇÃO DOS TÓPICOS MAIORES */
 .texto-topico p {
-    color: #444444;
-    font-size: 18px;
-    line-height: 1.4;
+    color: #333333;
+    font-size: 24px; /* Aumentado de 18px para 24px (+33%) */
+    line-height: 1.5;
     margin: 0;
+    font-family: Arial, sans-serif;
 }

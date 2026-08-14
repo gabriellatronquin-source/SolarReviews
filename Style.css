@@ -426,13 +426,13 @@ header h1, header p {
     align-items: center;
     font-family: Arial, sans-serif;
 }
-
 .titulo-diferenciais {
     color: #0b1b3d;
-    font-size: 30px; /* Reduzido de 42px para 30px */
+    font-size: 30px;
     font-weight: 900;
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 60px; /* Aumentado para igualar o espaço até o primeiro tópico */
     font-family: Arial, sans-serif;
     letter-spacing: 0.5px;
 }

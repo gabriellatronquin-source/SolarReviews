@@ -411,3 +411,91 @@ header h1, header p {
     margin: 0;
     border-radius: 12px;
 }
+
+/* ==========================================
+   SEÇÃO: POR QUE AVALIAR PRODUTOS SOLARES
+   ========================================== */
+
+.secao-diferenciais {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título da seção centralizado */
+.titulo-diferenciais {
+    color: #0b1b3d; /* Azul Escuro */
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Container da lista dos tópicos */
+.lista-topicos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px; /* Espaço equivalente a ~2 parágrafos de distância entre tópicos */
+}
+
+/* Estrutura base de cada tópico */
+.topico-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 60%; /* Define a largura máxima do bloco do tópico */
+}
+
+/* Alinhamento no lado esquerdo */
+.topico-esquerda {
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Alinhamento no lado direito */
+.topico-direita {
+    align-self: flex-end;
+    flex-direction: row-reverse; /* Inverte para o ícone continuar ao lado do texto */
+    text-align: right;
+}
+
+/* Ícones */
+.icone-topico svg {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+.icone-sol svg {
+    fill: #F4B400; /* Sol Amarelo */
+}
+
+.icone-raio-laranja svg {
+    fill: #FF6B00; /* Raio Laranja */
+}
+
+.icone-lupa-azul svg {
+    fill: #0b1b3d; /* Lupa Azul Escuro */
+}
+
+/* Título do Tópico (QUALIDADE, EFICIÊNCIA, INFORMAÇÃO) */
+.texto-topico h3 {
+    color: #0b1b3d;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+    letter-spacing: 1px;
+}
+
+/* Descrição do Tópico */
+.texto-topico p {
+    color: #444444;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+}

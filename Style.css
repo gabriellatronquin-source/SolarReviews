@@ -446,21 +446,35 @@ header h1, header p {
     gap: 65px;
 }
 
+./* ==========================================
+   MOLDURA EM VOLTA DE CADA TÓPICO
+   ========================================== */
+
+/* Cada tópico com uma moldura (linha fina) amarela/laranja */
 .topico-item {
     display: flex;
     align-items: center;
     gap: 30px;
-    width: 80%; /* Aumentado para ocupar mais espaço na página */
+    width: 80%;
+    
+    /* Moldura em volta do tópico */
+    border: 2px solid #F4B400; /* Linha fina na cor #F4B400 */
+    border-radius: 12px;       /* Cantos arredondados elegantes */
+    padding: 25px 30px;        /* Espaço interno para o texto/ícone não colarem na borda */
+    background: transparent;   /* Mantém o fundo cinza original da página */
+    box-sizing: border-box;
 }
 
+/* Alinhamento no lado esquerdo */
 .topico-esquerda {
     align-self: flex-start;
     text-align: left;
 }
 
+/* Alinhamento no lado direito */
 .topico-direita {
     align-self: flex-end;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* Ícone no canto direito do quadro */
     text-align: right;
 }
 
